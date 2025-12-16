@@ -1,25 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Research & Projects | Jose Benavides</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jose N. Benavides — Linguist</title>
+  <meta name="description" content="Jose N. Benavides — PhD candidate in Linguistics (Indiana University). Research: pragmatics, semantics, syntax, corpus annotation, and computational methods." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#7c3aed;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      --radius:10px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: dark;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#06101a);color:#e6eef8}
+    .container{max-width:var(--maxw);margin:48px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:flex;align-items:center;justify-content:center;font-weight:700;color:#041224}
+    h1{font-family:Noto Serif, serif;margin:0;font-size:28px}
+    .meta{font-size:14px;color:var(--muted);margin-top:6px}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);margin-left:18px;text-decoration:none;font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
+    .card{background:linear-gradient(180deg,var(--card),rgba(11,18,32,0.85));padding:20px;border-radius:var(--radius);box-shadow:0 6px 22px rgba(2,6,23,0.6)}
+    .section-title{font-weight:700;color:#f1f5f9;margin-bottom:10px}
+    p.lead{color:var(--muted);line-height:1.5;margin-top:8px}
+    ul.simple{padding-left:16px;margin:8px 0}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .pub{margin-bottom:12px}
+    footer{margin-top:28px;color:var(--muted);font-size:13px}
+    .cta{display:inline-block;margin-top:12px;background:linear-gradient(90deg,var(--accent),#06b6d4);padding:8px 14px;border-radius:8px;color:#041224;font-weight:700;text-decoration:none}
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+    a.link{color:#c7d2fe;text-decoration:none}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:76px;height:76px}.container{margin:20px;padding:16px}}
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="avatar">JB</div>
+      <div>
+        <h1>Jose N. Benavides P.</h1>
+        <div class="meta">Ph.D. candidate — Department of Linguistics, Indiana University &nbsp;|&nbsp; josbenav@iu.edu</div>
+        <div class="meta">Research: pragmatics • semantics • syntax • corpus annotation • computational methods</div>
+      </div>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<h1>Research & Projects</h1>
+    <div class="grid">
+      <main>
+        <section class="card" id="about">
+          <div class="section-title">About</div>
+          <p class="lead">I am a Ph.D. candidate in Linguistics at Indiana University specializing in formal syntax and semantics, with focused training in pragmatics, corpus annotation, and computational methods. My work investigates how speakers convey meaning beyond literal content (implicature, politeness, information structure) and how those phenomena can be reliably measured and annotated for computational evaluation.</p>
+          <a class="cta" href="/CV-CoverLetter-Benavides-25.pdf" target="_blank">Download CV (PDF)</a>
+        </section>
 
-<p>
-My research focuses on pragmatics and the evaluation of generative AI systems,
-with particular attention to sociotechnical alignment and measurement.
-</p>
+        <section class="card" id="research" style="margin-top:18px">
+          <div class="section-title">Research & Methods</div>
+          <p class="small muted">Selected topics</p>
+          <ul class="simple">
+            <li>Speech act theory, conversational implicature, and pragmatics–semantics interfaces</li>
+            <li>Question formation, clitic doubling, and information structure</li>
+            <li>Annotation protocols, reliability assessment, and evaluation design</li>
+          </ul>
 
-<h2>Current Projects</h2>
-<ul>
-    <li><strong>Pragmatic Evaluation of Generative Models</strong> — examining conversational norms and sociopragmatic competence in LLM outputs.</li>
-    <li><strong>Human Annotation and Reliability</strong> — exploring annotation practices and inter-annotator agreement in AI evaluation tasks.</li>
-</ul>
+          <p class="small muted" style="margin-top:10px">Methodological toolkit</p>
+          <div class="skill-list" style="margin-top:8px">
+            <span class="skill">Python (pandas, NumPy)</span>
+            <span class="skill">R, SPSS</span>
+            <span class="skill">ELAN • FLEx • SayMore</span>
+            <span class="skill">Praat scripting</span>
+            <span class="skill">LaTeX • Git • Linux</span>
+          </div>
+        </section>
 
-<p><a href="index.html">Back to Home</a></p>
+        <section class="card" id="publications" style="margin-top:18px">
+          <div class="section-title">Selected publications & manuscripts</div>
+          <div class="pub"><strong>Benavides, J. & Jurado Eraso, J.</strong> (in press). Clefting in wh-es que-questions in Nariñense Andean Spanish. <em>Issues in Hispanic and Lusophone Linguistics</em> (John Benjamins).</div>
+          <div class="pub"><strong>Work in progress:</strong> Pragmatic inference and information structure (Lutuv Chin) • Meaning, focus, and presupposition in wh-pseudoclefts • Animacy and non-specificity in clitic doubling (Nariñense Andean Spanish)</div>
+          <a class="link" href="#">See full list of talks & posters</a>
+        </section>
 
+        <section class="card" id="projects" style="margin-top:18px">
+          <div class="section-title">Selected projects</div>
+          <p class="small muted">Brief summaries</p>
+          <div style="margin-top:10px">
+            <strong>Annotation protocols for sociopragmatics</strong>
+            <p class="small muted">Designed codebooks and ran pilot annotations for conversational implicature and politeness markers; computed inter-annotator agreement and produced reproducible export scripts for analysis.</p>
+
+            <strong>Question formation & clitic studies</strong>
+            <p class="small muted">Fieldwork and elicitation on Lutuv and Nariñense Andean Spanish to investigate question particles, clitic placement, and information-structuring diagnostics.</p>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Contact</div>
+          <p class="muted small">Email: <a class="link" href="mailto:josbenav@iu.edu">josbenav@iu.edu</a></p>
+          <p class="muted small">Website: <a class="link" href="https://josbenav.github.io/" target="_blank">josbenav.github.io</a></p>
+          <p class="muted small">GitHub: <a class="link" href="https://github.com/josbenav" target="_blank">github.com/josbenav</a></p>
+          <p class="muted small">Location: Bloomington, IN (willing to relocate for internships)</p>
+
+          <div style="margin-top:14px">
+            <div class="section-title">Teaching & Mentoring</div>
+            <p class="small muted">Spanish language instruction; undergraduate TA for courses in linguistics and Spanish; mentoring undergraduate research projects.</p>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title">Quick links</div>
+            <p class="small"><a class="link" href="/CV-CoverLetter-Benavides-25.pdf" target="_blank">Download CV (PDF)</a></p>
+            <p class="small"><a class="link" href="#publications">Publications & talks</a></p>
+            <p class="small"><a class="link" href="#projects">Projects</a></p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title">Technical highlights</div>
+          <div class="skill-list" style="margin-top:8px">
+            <span class="skill">Annotation: ELAN, FLEx</span>
+            <span class="skill">Scripting: Python, R</span>
+            <span class="skill">Speech: Praat</span>
+            <span class="skill">NLP: corpus methods</span>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      <div class="muted small">Built for academia — If you’d like this site customized or deployed to GitHub Pages, I can provide a deployment checklist and a repo-ready layout.</div>
+    </footer>
+  </div>
 </body>
 </html>
