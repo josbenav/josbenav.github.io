@@ -10,22 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      /* light theme palette (only color-related changes) */
-      --bg: #ffffff;                 /* page background */
-      --card: #ffffff;               /* card background (white card) */
-      --muted: #475569;              /* subdued text for light bg */
-      --accent: #7c3aed;             /* brand accent kept */
-      --glass: rgba(0,0,0,0.04);     /* subtle glass on light bg */
+      --bg: #ffffff;                
+      --card: #ffffff;              
+      --muted: #475569;              
+      --accent: #7c3aed;             
+      --glass: rgba(0,0,0,0.04);     
       --maxw:1100px;
       --radius:10px;
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
       color-scheme: light;
     }
-    /* global / page */
     html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#f8fafc);color:#041224;}
     .container{max-width:var(--maxw);margin:48px auto;padding:28px}
     header{display:flex;gap:20px;align-items:center}
-    /* avatar */
     .avatar{width:96px;height:96px;border-radius:12px;
       background:linear-gradient(135deg,var(--accent),#2dd4bf);
       display:flex;align-items:center;justify-content:center;font-weight:700;color:#ffffff}
@@ -34,7 +31,6 @@
     nav{margin-left:auto}
     nav a{color:var(--muted);margin-left:18px;text-decoration:none;font-weight:600}
     .grid{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
-    /* cards on light bg: subtle border and soft shadow */
     .card{background:linear-gradient(180deg,var(--card),#ffffff);padding:20px;border-radius:var(--radius);
       box-shadow:0 6px 18px rgba(16,24,40,0.06); border:1px solid rgba(16,24,40,0.04)}
     .section-title{font-weight:700;color:#041224;margin-bottom:10px}
@@ -44,12 +40,11 @@
     .skill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
     .pub{margin-bottom:12px}
     footer{margin-top:28px;color:var(--muted);font-size:13px}
-    /* CTA: keep accent gradient but use light text for contrast */
     .cta{display:inline-block;margin-top:12px;background:linear-gradient(90deg,var(--accent),#06b6d4);
       padding:8px 14px;border-radius:8px;color:#ffffff;font-weight:700;text-decoration:none}
     .muted{color:var(--muted)}
     .small{font-size:13px}
-    a.link{color:#1e40af;text-decoration:none} /* darker blue link for light bg */
+    a.link{color:#1e40af;text-decoration:none} 
     .badge{display:inline-block;padding:6px 10px;border-radius:8px;background:rgba(124,58,237,0.06);color:#5b21b6;font-weight:700;font-size:13px;margin-top:6px}
     .intern-flag{margin-top:8px;background:linear-gradient(90deg,#06b6d4,#7c3aed);color:#ffffff;padding:6px 10px;border-radius:999px;font-weight:700;display:inline-block}
     .muted-block{color:var(--muted);background:rgba(2,6,23,0.02);padding:8px;border-radius:8px;margin-top:10px}
@@ -64,7 +59,8 @@
       <div class="avatar">JB</div>
       <div style="min-width:320px">
         <h1>Jose Benavides</h1>
-        <div class="meta">Ph.D. candidate in Linguistics (minor: Computational Linguistics), Department of Linguistics — Indiana University</div>
+        <div class="meta">Ph.D. candidate in Linguistics (minor: Computational Linguistics)</div>
+        <div class="meta">Department of Linguistics — Indiana University</div>
         <div class="meta">Bloomington, IN • <a href="#">josbenav@iu.edu</a> • <a class="link" href="https://github.com/josbenav" target="_blank">github.com/josbenav</a></div>
 
         <div style="margin-top:8px">
